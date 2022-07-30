@@ -22,9 +22,9 @@
 
       <ul class="navbar-nav">
         <% if current_user %>
-          <li class="nav-item">
-            <%= link_to ('<i class="fa fa-user"></i>' + truncate(current_user.email, length: 25)).html_safe,
-              edit_user_registration_path, title: 'Edit profile'
+          <li class="nav-item me-3 pt-1">
+            <%= link_to ('<i class="fa fa-user me-1"></i>' + truncate(current_user.email, length: 25)).html_safe,
+              edit_user_registration_path, title: 'Edit profile', id: 'user-email'
             %>
           </li>
           <li class="nav-item">
