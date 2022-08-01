@@ -21,13 +21,17 @@
 
     <div class="container mt-3">
       <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-12">
           <%#= bootstrap_flash %>
           <%= render 'layouts/messages' %>
           <%= yield %>
         </div>
 
       </div><!--/row-->
+
+      <footer>
+        <p>&copy; Company 2015</p>
+      </footer>
     </div> <!-- /container -->
   </body>
 </html>
